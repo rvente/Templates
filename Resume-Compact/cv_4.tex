@@ -1,0 +1,147 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Medium Length Professional CV
+% LaTeX Template
+% Version 2.0 (8/5/13)
+%
+% This template has been downloaded from:
+% http://www.LaTeXTemplates.com
+%
+% Original author:
+% Trey Hunner (http://www.treyhunner.com/)
+%
+% Modified By Ralph Vente
+%
+% Important note:
+% This template requires the resume.cls file to be in the same directory as the
+% .tex file. The resume.cls file provides the resume style used for structuring the
+% document.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass{resume} % Use the custom resume.cls style
+\usepackage[dvipsnames]{xcolor}
+
+\usepackage[left=0.75in,top=0.5in,right=0.75in,bottom=0.1in]{geometry} % Document margins
+\newcommand{\tab}[1]{\hspace{.2667\textwidth}\rlap{#1}}
+\newcommand{\itab}[1]{\hspace{0em}\rlap{#1}}
+\name{Ralph Vente}
+\address{249 Thomas S Boyland St \\ Brooklyn, NY 11233} % address
+\address{(347) 792 - 9426 \\ venteralph@gmail.com} % phone number and email
+% \address{github: loisks317 \\ blog: loisks.blogspot.com} % github
+
+\renewenvironment{rSection}[1]{
+  \sectionskip
+  \textcolor{Black}{\MakeUppercase{#1}}
+  \sectionlineskip
+  \begin{list}{}{
+      \setlength{\leftmargin}{1.5em}
+    }
+  \item[]
+}{
+  \end{list}
+}
+
+\begin{document}
+
+\begin{rSection}{Education}
+
+  \begin{tabular}{ @{} >{}l @{\hspace{-10ex}} l }
+      {\bf Macaulay Honors at Hunter College} & GPA: 3.95
+    \\ Bachelor of Arts, Expected June 2021
+    \\ Major in Computer Science and Minor in Legal Studies
+    \\ Full Merit Scholarship to Macaulay Honors College (4 years)
+    \\ {\em Dean's List Recognition}, Fall 2017
+    \\
+    \\ {\bf The Brooklyn Latin School} & GPA: 3.5 
+    \\ International Baccalaureate Diploma, June 2017
+    \\ Regents Diploma Advanced Designation, June 2017
+    \\ {\em National Latin Exam Gold Medal}, 2014, 2015, 2017
+    \\ {\em Paideia Institute Rome Prize}, May 2016
+  \end{tabular}
+
+\end{rSection}
+
+
+\begin{rSection}{Experience}
+
+  \begin{rSubsection}{Regents and SAT Tutor}{Khan's Tutorial}{Richmond Hill, NY}{March 2017 - November 2017}
+  \item Motivated and guided struggling students to success in Regents
+    examinations including Algebra, Geometry, Trigonometry, and Biology in group
+    instruction, receiving the {\em Instructor of the Month Award} in August
+    2017
+  \item Tailored the SAT test prep curriculum to address the weaknesses of a
+    classroom of 15 students
+  \item Increased average SAT scores by upwards of 100 points within 4 sessions
+    using engaging and effective instruction
+    % that sounds like a lot, but the key here is the motivational aspect of it.
+    % If you are told that you have the ability to do something and you're no
+    % longer afraid to try, you can do way more than you ever thought possible
+  \item Promoted family involvement using in-depth conferences to break down
+    long-standing communication gaps
+  \item Facilitated and expedited data collection and processing by automating a
+    digital workbook of scoring and attendance information
+  \end{rSubsection}
+
+  \begin{rSubsection}{Creative Services Intern}{Rebecca School}{New York, NY}{July 2017 - August 2017}
+  \item Assisted in documenting standard procedure for company trainees by
+    editing videos using Adobe Premier CC
+    % the rebecca school is an educational institution that serves special needs
+    % students including those on the autism spectrum. These videos are
+    % important because they help the next generation of teachers get the
+    % footing and understanding they need to interact appropriately in these
+    % sensitive situations. I have the utmost respect for everyone involved and
+    % I'm deeply inspired by the work they do in our society.
+  \item Created, edited, and published digital images and print documents for
+    distribution on the company website and on fliers using the Adobe Creative
+    Suite
+  \item Overhauled the text of the company website for clarity and consistency
+    using Wordpress, HTML, and knowledge of journalistic writing conventions
+  \end{rSubsection}
+
+  \begin{rSubsection}{Living Latin in Rome Fellow}{Paideia Institute}{Rome, Italy}{July 2016}
+  \item Participated in a merit scholarship study abroad program in Rome, Italy
+    for 16 days of immersion in Roman culture, arts, and architecture
+  \item Studied ancient Latin passages from authors such as Ovid, Cicero, and
+    Virgil
+  \item Spoke and performed in Latin for other members of Living Latin in Rome
+    at a venue held by the Paideia Institute
+  \end{rSubsection}
+
+  \begin{rSubsection}{President}{Humans of Brooklyn Latin}{Brooklyn, NY}{December 2014 - July 2017}
+  \item Founded Humans of Brooklyn Latin on Facebook to promote a deeper
+    understanding of the joys and struggles of students at Brooklyn Latin
+  \item Captured 116 portraits of students, amassing more than 630 likes on
+    Facebook
+    % and edited the digital negatives images using Darktable
+  \item Led a team of photographers to increase quality and output of the page.
+  \item Employed conventions of artistic digital negative editing using
+    Darktable and Gimp
+  \end{rSubsection}
+
+\end{rSection}
+
+\begin{rSection}{Languages}
+
+  \begin{tabular}{ @{} >{}l @{\hspace{16.5ex}} l }
+    Haitian Creole & Native Proficiency, Reading, Writing, Speaking, and Listening \\
+    Spanish & Minimum Working Proficiency, Reading, Writing, Speaking, and Listening \\
+    Latin & Advanced Proficiency, Reading, Writing \\
+  \end{tabular}
+
+\end{rSection}
+
+\begin{rSection}{Skills}
+
+  \begin{tabular}{ @{} >{}l @{\hspace{6ex}} l }
+    Programming Languages &  Python, Bash, HTML, \LaTeX, Git \\
+    Python Packages & Pandas, Matplotlib, Numpy \\
+    Software \& Tools & Microsoft Office Suite, Google Drive Suite, Adobe Creative Suite, Darktable\\
+  \end{tabular}
+
+\end{rSection}
+
+\end{document}
