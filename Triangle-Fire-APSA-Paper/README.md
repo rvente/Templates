@@ -5,9 +5,9 @@ like Google Scholar. Just copy paste that into the .bib file and then
 use its reference when citing in your paper, just as I do.
 
 Latex generates a ton of auxiliary files as you can see. You can get
-rid of them by running `make clear`
+rid of them by running `make clear`.
 
-Running `make pdf-only` does what it says
+Running `make pdf-only` does what it says.
 
 ```bash
 main:
