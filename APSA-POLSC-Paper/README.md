@@ -4,19 +4,21 @@ You can usually find them with the "cite it" dialogue on something
 like Google Scholar. Just copy paste that into the .bib file and then
 use its reference when citing in your paper, just as I do.
 
-Latex generates a ton of auxiliary files as you can see. You can get
-rid of them by running `make clear`.
+LaTeX engines generate a ton of auxiliary files as you can see. You can get
+rid of them manually by running `make clear`.
 
-Running `make pdf-only` does what it says.
+Running `make pdf` deletes those automatically. If you're in the process of
+Writing, you might want to preserve the files. Only once you're done for the
+session would you want to delete them.
 
 ```bash
 main:
-	pdflatex *.tex
+	xelatex *.tex
 	biber *.bcf
-	pdflatex *.tex 
+	xelatex *.tex 
 clear:
 	rm *.bcf *.log *.bbl *.blg *.xml *.aux *.out
 
-pdf-only:main
+pdf:main
 	rm *.bcf *.log *.bbl *.blg *.xml *.aux *.out
 ```

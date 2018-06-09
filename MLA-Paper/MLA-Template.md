@@ -88,7 +88,7 @@ cervum, auxilium qua te magorum modo Atlas, munus de Ixione **faber**.
 \end{dialogue}
 
 
-\newpage \noindent {\large \em References } \hfil
+\newpage \noindent {\large \em Works Cited } \hfil
 
 
 \setlength{\parindent}{-0.2in}
