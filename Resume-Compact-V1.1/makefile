@@ -1,3 +1,3 @@
 main:
-	xelatex *.tex 
+	pdflatex *.tex
 	rm -rf *.log *.aux
