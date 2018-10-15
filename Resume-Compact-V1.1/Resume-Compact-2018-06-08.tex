@@ -21,28 +21,51 @@
 %----------------------------------------------------------------------------------------
 
 \documentclass{resume} % Use the custom resume.cls style
+\usepackage[english]{babel}
 \usepackage[dvipsnames]{xcolor}
 \usepackage{multicol}
 \usepackage[left=0.75in,top=0.6in,right=0.75in,bottom=0.1in]{geometry} % Document margins
 \newcommand{\tab}[1]{\hspace{.2667\textwidth}\rlap{#1}}
 \newcommand{\itab}[1]{\hspace{0em}\rlap{#1}}
+\usepackage{xparse}
+\usepackage{xcolor}
+\usepackage{listings}
+\usepackage{hyperref}
+ 
+\hypersetup{
+    colorlinks=true,
+    linkcolor=blue!50!black,
+    filecolor=magenta,      
+    urlcolor=blue!50!black,
+}
+ 
+\urlstyle{same}
+
+\NewDocumentCommand{\code}{v}{%
+  \texttt{\textcolor{blue!50!black}{#1}}%
+}
+
+\lstset{
+  language=bash,keywordstyle={\bfseries\color{blue}}
+}
+
 \name{Ralph Vente} % Your name
 \address{249 Thomas S Boyland St. \\ Brooklyn, NY 11233} % Your address
 \address{(347) 792 - 9426 \\ venteralph@gmail.com} % Your phone number and email
 
 
 \renewenvironment{rSection}[1]{
-\sectionskip
-\textcolor{Black}{\MakeUppercase{#1}}
-\sectionlineskip
-\begin{list}{}{
-\setlength{\leftmargin}{1.5em}
+  \sectionskip
+  \textcolor{Black}{\MakeUppercase{#1}}
+  \sectionlineskip
+  \begin{list}{}{
+      \setlength{\leftmargin}{1.5em}
+    }
+  \item[]
+  }{
+  \end{list}
 }
-\item[]
-}{
-\end{list}
-}
-
+    
 \setlength{\multicolsep}{6.0pt plus 2.0pt minus 1.5pt}
 
 \begin{document}
@@ -68,22 +91,39 @@
 % WORK EXPERIENCE SECTION
 %----------------------------------------------------------------------------------------
 \begin{rSection}{Experience}
-  \begin{rSubsection}{Platinum Edge Tutoring}{June 2018 | Present}{SHSAT Tutor}{Brooklyn Heights, NY}
-    \item Designed concrete examples to explain abstract concepts and ease SHSAT learning
-    \item Led a team of interns to create a general topics textbook using \LaTeX \hspace{.7ex}to facilitate instruction future tutors 
+  \begin{rSubsection}{Platinum Edge Tutoring}{June 2018 | Present}{Leadership \& Technology Teams}{Brooklyn Heights, NY}
+    \item Collaborated with backend web developer to improve student-side
+      experience using \code{MathJax} and \code{Pandoc}
+    \item Produced instructional YouTube videos for students with geographical
+      barriers to access
+    \item Taught SAT and SHSAT students on site, deconstructing difficult problems
+      into simple, repeatable processes
+    \item Managed summer intern cohort to create an SHSAT test prep book
+      using \LaTeX, facilitating instruction for future tutors
   \end{rSubsection}
   \begin{rSubsection}{Khan's Tutorial}{March 2017 | November 2017}{Regents and SAT Tutor}{Richmond Hill, NY}
     \item Achieved {\em Instructor of the Month Award} in August 2017 for motivating and guiding struggling students to success in Regents examinations
-    \item Increased average SAT scores by more than 100 points (1600 scale) within 5
-      instructional sessions using effective student engagement strategies
-      % that sounds like a lot, but the key here is the motivational aspect of it. If you are told that you have the ability to do something and you're no longer afraid to try, you can do way more than you ever thought possible
+    \item Increased average SAT scores of 15 students upwards of 100 points within 5 weeks (30 hours)
+      % that sounds like a lot, but the key here is the motivational aspect of
+      % it. If you are told that you have the ability to do something and you're
+      % no longer afraid to try, you can do way more than you ever thought
+      % possible
     \item Promoted family involvement using in-depth conferences to break down long-standing communication gaps
-    % \item Tailored the SAT test prep curriculum to address the weaknesses of a classroom of 15 students
-    % \item Facilitated and expedited data collection and processing by automating a digital workbook of scoring and attendance information
+      % \item Tailored the SAT test prep curriculum to address the weaknesses of
+      %   a classroom of 15 students
+      % \item Facilitated and expedited data collection and processing by
+      %   automating a digital workbook of scoring and attendance information
   \end{rSubsection}
 
   \begin{rSubsection}{Rebecca School}{July 2017 | August 2017}{Creative Services Intern}{New York, NY}
-    \item Assisted in documenting standard procedure for company trainees by editing videos using Adobe Premier CC % the rebecca school is an educational institution that serves special needs students including those on the autism spectrum. These videos are important because they help the next generation of teachers get the footing and understanding they need to interact appropriately in these sensitive situations. I have the utmost respect for everyone involved and I'm deeply inspired by the work they do in our society.
+  \item Assisted in documenting standard procedure for company trainees by
+    editing videos using Adobe Premier
+    CC % the rebecca school is an educational institution that serves special
+       % needs students including those on the autism spectrum. These videos are
+       % important because they help the next generation of teachers get the
+       % footing and understanding they need to interact appropriately in these
+       % sensitive situations. I have the utmost respect for everyone involved
+       % and I'm deeply inspired by the work they do in our society.
     \item Created, edited, and published digital images and print documents for distribution on the company website and on fliers using the Adobe Creative Suite
     \item Overhauled the text of the company website for clarity and consistency using Wordpress, HTML, and knowledge of journalistic writing conventions
   \end{rSubsection}
@@ -94,11 +134,13 @@
     \item Spoke and performed in Latin for other members of Living Latin in Rome at the Paideia Institute's venue
   \end{rSubsection}
 
-  \begin{rSubsection}{Humans of Brooklyn Latin}{December 2014 | July 2017}{President}{Brooklyn, NY}
-    \item Founded Humans of Brooklyn Latin on Facebook to promote a deeper understanding of the experiences of students at Brooklyn Latin
-    \item Captured 116 portraits of students, amassing more than 630 likes on Facebook
-     \item Edited digital negatives using the Open Source tools Darktable, Gimp, and Krita
-  \end{rSubsection}
+%  \begin{rSubsection}{Humans of Brooklyn Latin}{December 2014 | July 2017}{President}{Brooklyn, NY}
+%    \item Founded Humans of Brooklyn Latin on Facebook to promote a deeper understanding of the experiences of students at Brooklyn Latin
+%    \item Captured 116 portraits of students, amassing more than 630 likes on Facebook
+%     \item Edited digital negatives using the Open Source tools Darktable, Gimp,
+%       and Krita % TODO: Add the name of the journalism award you won and
+%                 % attribute it to this.
+%  \end{rSubsection}
 
 \end{rSection}
 
@@ -112,10 +154,18 @@
 
 \begin{rSection}{ Skills }
   \begin{tabular}{ @{} >{}l @{\hspace{6ex}} l }
-    Programming Languages & C++, Python, Bash, HTML, \LaTeX, Git                                             \\
-    Python Packages       & Pandas, Matplotlib, Numpy                                                   \\
+    Programming Languages & \code{C++, python, bash, HTML,} \LaTeX, \code{git}\\
+    Python Packages       & \code{pandas, matplotlib, numpy}\\
     Software \& Tools     & Microsoft Office Suite, Google Drive Suite, Adobe Creative Suite, Darktable \\
   \end{tabular}
+\end{rSection}
+
+\begin{rSection}{ Photography and Writing }
+  \begin{tabular}{ @{} >{}l @{\hspace{4ex}} l @{\hspace{12ex}} l}% TODO: Make this more elegant
+    {Humans of Brooklyn Latin}& {Creator \& President} &  \url{https://www.facebook.com/HoTBLS/} \\
+    {Blog} & {Writer} & \url{https://medium.com/@venteralph} \\
+    {Personal Site} & {Writer} & \url{https://rvente.github.io/ink/} \\
+    \end{tabular}
 \end{rSection}
 
 \end{document}
